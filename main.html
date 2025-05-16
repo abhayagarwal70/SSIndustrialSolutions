@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SS Industrial Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient-custom {
+            background: linear-gradient(to right, #6b7280, #374151); /* Gray shades */
+        }
+        .bg-gradient-blue {
+             background: linear-gradient(to right, #4338CA, #6D28D9);
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        .card:hover {
+            transform: translateY(-0.5rem); /* Move up slightly on hover */
+            box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 3px 6px -1px rgba(0, 0, 0, 0.08); /* Increased shadow on hover */
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .slide-in-left {
+            transform: translateX(-20px);
+            opacity: 0;
+            animation: slideInLeft 0.5s ease forwards;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in-right {
+            transform: translateX(20px);
+            opacity: 0;
+            animation: slideInRight 0.5s ease forwards;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-100">
+    <header class="bg-gradient-custom text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-semibold fade-in">SS Industrial Solutions</h1>
+            <p class="text-lg fade-in">Precision and Innovation in Manufacturing</p>
+        </div>
+    </header>
+
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center slide-in-left">About Us</h2>
+            <p class="text-gray-700 text-lg text-center slide-in-left">
+                SS Industrial Solutions is a burgeoning manufacturing company dedicated to providing high-quality industrial solutions with a focus on precision and efficiency. Located in Bengaluru, Karnataka, India, we are committed to meeting the diverse needs of our clients through a combination of advanced machinery, skilled expertise, and innovative approaches.
+            </p>
+             <div class="mt-6 flex justify-center slide-in-left">
+                <img src="https://media.istockphoto.com/id/184291301/photo/high-precision-milling-machine-working-on-a-steel-detail.jpg?s=612x612&w=0&k=20&c=yvBwtFi5t3v3KFD2UmjCjWJt6jrqRi5zD_7L-fR_kMMY=" alt="Precision Manufacturing" class="rounded-md shadow-lg" style="max-width: 80%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center slide-in-right">Our Capabilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Precision Milling</h3>
+                    <p class="text-gray-700 text-lg mb-4">Utilizing a Milling DRO with 5-micron accuracy.</p>
+                    <img src="https://media.istockphoto.com/id/1150128972/photo/close-up-of-cnc-milling-machine-at-work.jpg?s=612x612&w=0&k=20&c=a8G9quj9M4GD6uT9xxk6R9vM6L6rRzwyRj3S8g5uA-E=" alt="Precision Milling" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Turning Operations</h3>
+                    <p class="text-gray-700 text-lg mb-4">Lathe Machine with 10-micron accuracy, up to 7 feet length and 13 inches diameter.</p>
+                    <img src="https://media.istockphoto.com/id/537722717/photo/lathe-machine-in-operation.jpg?s=612x612&w=0&k=20&c=K59vrjN69Fj-g-jk9j7kJ-mKJoO_eE8kMvP3j9T6g8s=" alt="Turning Operations" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Surface Grinding</h3>
+                    <p class="text-gray-700 text-lg mb-4">High-quality surface finishing.</p>
+                     <img src="https://media.istockphoto.com/id/1587618839/photo/grinding-machine-working-on-flat-steel-surface.jpg?s=612x612&w=0&k=20&c=O1_j7g6_r5i6y99L6c-kKj8gJ7Ll7Ry9C95R9c-DtgM=" alt="Surface Grinding" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Bench Grinding</h3>
+                    <p class="text-gray-700 text-lg mb-4">Essential grinding operations.</p>
+                    <img src="https://media.istockphoto.com/id/1458724819/photo/worker-grinding-metal-detail-on-grinding-machine-with-sparks.jpg?s=612x612&w=0&k=20&c=j-fD9eRzKXqM9-MWhBko66e9gwhj_fWcEwRk66SzFjE=" alt="Bench Grinding" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Horizontal Drilling</h3>
+                    <p class="text-gray-700 text-lg mb-4">Accurate and efficient horizontal drilling.</p>
+                    <img src="https://media.istockphoto.com/id/182885132/photo/drilling-machine.jpg?s=612x612&w=0&k=20&c=eP7gGvDNgj966jX787j9U-M-tDyde-M6e69gK-a5bcE=" alt="Horizontal Drilling" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Scrap and Rework</h3>
+                    <p class="text-gray-700 text-lg mb-4">Solutions for scrap materials and rework services.</p>
+                    <img src="https://media.istockphoto.com/id/157622188/photo/industrial-recycling.jpg?s=612x612&w=0&k=20&c=j-fD9eRzKXqM9-MWhBko66e9gwhj_fWcEwRk66SzFjE=" alt="Scrap and Rework" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">IT & Photo Hardware</h3>
+                    <p class="text-gray-700 text-lg mb-4">Dealing with Computer Accessories, Cameras, Computers, and Hardware.</p>
+                    <img src="https://media.istockphoto.com/id/185244722/photo/computer-parts.jpg?s=612x612&w=0&k=20&c=EwZiJj_QYj-y9QwL95T-L-tKzG6yMEdShzGg9mjiD-Q=" alt="IT & Photo Hardware" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Manpower Supply</h3>
+                    <p class="text-gray-700 text-lg mb-4">Providing skilled manpower solutions.</p>
+                    <img src="https://media.istockphoto.com/id/1397127156/photo/group-of-factory-workers-walking-and-talking-together.jpg?s=612x612&w=0&k=20&c=j6ZqFoFzuyDb9yXj3kR-6eL8PZ8jM8R9jE-I9D-qKAs=" alt="Manpower Supply" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Jigs and Fixtures</h3>
+                    <p class="text-gray-700 text-lg mb-4">Designing and manufacturing custom Jigs and Fixtures.</p>
+                    <img src="https://media.istockphoto.com/id/183709728/photo/metalworking-lathe-and-milling-machine.jpg?s=612x612&w=0&k=20&c=vj5g3eD94y7T8j8gJv1yX-rE4L-fR_kMMY=" alt="Jigs and Fixtures" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Poka-Yoke Solutions</h3>
+                    <p class="text-gray-700 text-lg mb-4">Implementing error-proofing mechanisms.</p>
+                    <img src="https://media.istockphoto.com/id/1182189917/photo/close-up-of-hand-holding-sensor-wire-in-factory.jpg?s=612x612&w=0&k=20&c=yB5eRzJhyjKzKD-g9p9g-c9y9g3M9e-fP5mK-eKj8gJ7Ll7Ry9C95R9c-DtgM=" alt="Poka-Yoke Solutions" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Low-Cost Automation</h3>
+                    <p class="text-gray-700 text-lg mb-4">Developing and integrating cost-effective automation.</p>
+                    <img src="https://media.istockphoto.com/id/1283949773/photo/robotic-arm-in-a-factory.jpg?s=612x612&w=0&k=20&c=U6jCj69eZ-efj5e_p8L9RzWJ9zFv-kKj8gJ7Ll7Ry9C95R9c-DtgM=" alt="Low-Cost Automation" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Molding Dies</h3>
+                    <p class="text-gray-700 text-lg mb-4">Producing molding dies for various applications.</p>
+                    <img src="https://media.istockphoto.com/id/172274476/photo/mold-for-plastic-injection-molding.jpg?s=612x612&w=0&k=20&c=vj5g3eD94y7T8j8gJv1yX-rE4L-fR_kMMY=" alt="Molding Dies" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                 <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Crimping Tools</h3>
+                    <p class="text-gray-700 text-lg mb-4">Offering solutions related to crimping tools.</p>
+                    <img src="https://media.istockphoto.com/id/1785245267/photo/various- サイズ-инструменты-для-электромонтажа-на-белом-столе.jpg?s=612x612&w=0&k=20&c=fKzDgpzDNgj966jX787j9U-M-tDyde-M6e69gwhj_fWcEwRk66SzFjE=" alt="Crimping Tools" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">All Type Die Manufacturing</h3>
+                    <p class="text-gray-700 text-lg mb-4">Manufacturing various types of dies.</p>
+                    <img src="https://media.istockphoto.com/id/183709728/photo/metalworking-lathe-and-milling-machine.jpg?s=612x612&w=0&k=20&c=vj5g3eD94y7T8j8gJv1yX-rE4L-fR_kMMY=" alt="All Type Die Manufacturing" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Machine Manufacturing</h3>
+                    <p class="text-gray-700 text-lg mb-4">Manufacturing a wide range of machinery.</p>
+                    <img src="https://media.istockphoto.com/id/495469421/photo/robotic-arm-working-on-car-assembly-line.jpg?s=612x612&w=0&k=20&c=yB5eRzJhyjKzKD-g9p9g-c9y9g3M9e-fP5mK-eKj8gJ7Ll7Ry9C95R9c-DtgM=" alt="Machine Manufacturing" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                 <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Wire Twisting Machine</h3>
+                    <p class="text-gray-700 text-lg mb-4">Solutions for wire twisting machinery.</p>
+                     <img src="https://media.istockphoto.com/id/1057779978/photo/close-up-of-wire-being-twisted-together-by-a-machine.jpg?s=612x612&w=0&k=20&c=fKzDgpzDNgj966jX787j9U-M-tDyde-M6e69gwhj_fWcEwRk66SzFjE=" alt="Wire Twisting Machine" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Lifter Trolley</h3>
+                    <p class="text-gray-700 text-lg mb-4">Manufacturing Lifter Trolleys.</p>
+                    <img src="https://media.istockphoto.com/id/1588217389/photo/forklift-truck-lifting-cargo-in-warehouse.jpg?s=612x612&w=0&k=20&c=j-fD9eRzKXqM9-MWhBko66e9gwhj_fWcEwRk66SzFjE=" alt="Lifter Trolley" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+                <div class="card fade-in">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Wire Circuit Testing</h3>
+                    <p class="text-gray-700 text-lg mb-4">Equipment for testing wire circuits.</p>
+                    <img src="https://media.istockphoto.com/id/172274476/photo/mold-for-plastic-injection-molding.jpg?s=612x612&w=0&k=20&c=vj5g3eD94y7T8j8gJv1yX-rE4L-fR_kMMY=" alt="Wire Circuit Testing Machine" class="rounded-md" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center slide-in-left">Our Vision</h2>
+            <p class="text-gray-700 text-lg text-center mb-6 slide-in-left">
+                To become a trusted and leading provider of innovative and precise industrial solutions, contributing to the growth and success of our partners through quality, efficiency, and technological advancement.
+            </p>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center slide-in-right">Our Commitment</h2>
+            <ul class="list-disc list-inside text-gray-700 text-lg slide-in-right">
+                <li>Delivering high-precision manufacturing services.</li>
+                <li>Providing cost-effective and efficient solutions.</li>
+                <li>Maintaining stringent quality standards.</li>
+                <li>Fostering strong and collaborative relationships with our clients.</li>
+                <li>Continuously exploring and implementing innovative technologies.</li>
+                 <li>Expanding our manufacturing capabilities to meet diverse industrial needs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-gradient-blue py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-white mb-4 text-center fade-in">Contact Us</h2>
+            <p class="text-gray-100 text-lg text-center fade-in">
+                We are eager to discuss your manufacturing needs and explore how SS Industrial Solutions can be your valued partner. Please reach out to us in Bengaluru, Karnataka, India.
+            </p>
+             <div class="mt-6 flex justify-center fade-in">
+                <img src="https://media.istockphoto.com/id/1489611777/photo/karnataka-india.jpg?s=612x612&w=0&k=20&c=eP7gGvDNgj966jX787j9U-M-tDyde-M6e69gK-a5bcE=" alt="Bengaluru, Karnataka, India" class="rounded-md shadow-lg" style="max-width: 80%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 SS Industrial Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // You can add JavaScript here for interactive features if needed.
+    </script>
+</body>
+</html>
