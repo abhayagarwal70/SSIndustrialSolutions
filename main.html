@@ -84,7 +84,73 @@
         .clickable-card:active {
             transform: scale(0.95); /* Slightly shrink on click */
         }
+ .cardTemplate {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 550px;
+            text-align: center;
+            border: 1px solid #ddd;
+            background-image: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 60%, #E0E0E0 100%);
+        }
 
+        .name {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #222;
+            margin-top: 10px;
+        }
+
+        .phone {
+            color: #555;
+            margin-top: 5px;
+            font-size: 1em;
+        }
+
+        .services {
+            font-size: 1em;
+            color: #333;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .email {
+            color: #0000ff;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        .address {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .logo {
+            height: 80px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .phone-numbers {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+
+        .phone-numbers span {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body class="font-inter bg-gray-100">
@@ -104,7 +170,41 @@
 			Specialist of Jig & Fixture, Creemping tool/machine, Die & Automation(LCA). Supply of Manpower & Scrap work.
             </p>
              <div class="mt-6 flex justify-center slide-in-left">
-                <img src="card.jpeg" alt="Precision Manufacturing" class="rounded-md shadow-lg" style="max-width: 80%; height: auto;">
+                <div class="cardTemplate"> <h2 class="name" style="color:#FF0000;">S S INDUSTRIAL SERVICES</h2>
+        <div class="flex-container">
+       
+		
+            <div>
+               
+    <p class="flex items-center">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/phone.svg" alt="Phone" class="mr-2 w-5 h-5" />
+        Phone:
+        <a href="tel:+917017135933" class="text-blue-400 hover:underline">
++91 70171 35933</a>
+    </p>
+    <p class="flex items-center">
+       💬
+        WhatsApp:
+        <a href="https://wa.me/919557199861" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">+91 9557199861</a>
+    </p>
+            </div>
+            <img src="shiv.png" alt="Logo" class="logo">
+        </div>
+
+        <p class="services">
+            Specialist of Jig & Fixtures, Creeping Tool/Machine, Die & Automation (LCA).<br>
+            Supply of Manpower & Scrap Work.
+        </p>
+        <p class="email">
+        
+        Email:📨
+        <a href="mailto:s.singh0246@gmail.com" class="text-blue-400 hover:underline">s.singh0246@gmail.com</a>
+    </p>
+        <p class="address">
+            Hanumant Market Shimla Bhadhur, Sidkul Road Rudrapur<br>
+            Shop No 5 (Udham Singh Nagar) Uttarakhand 263153
+        </p>
+    </div>
             </div>
         </div>
     </section>
@@ -332,7 +432,8 @@
         <div class="container mx-auto px-4">
             <h2 class="text-2xl font-semibold text-white mb-4 text-center fade-in">Contact Us</h2>
             <p class="text-gray-100 text-lg text-center fade-in">
-                We are eager to discuss your manufacturing needs and explore how SS Industrial Solutions can be your valued partner. Please reach out to us in Near Police Thana, Ward No. 02, Transit Camp Rudrapur(Udham Singh Nagar) Uttarakhand 263139, India.
+                We are eager to discuss your manufacturing needs and explore how SS Industrial Solutions can be your valued partner. Please reach out to us in Hanumant Market Shimla Bhadhur, Sidkul Road Rudrapur<br>
+            Shop No 5 (Udham Singh Nagar) Uttarakhand 263153, India.
             </p>
            <div class="mt-6 flex flex-col justify-center items-center fade-in text-white">
     <p>Contact:</p>
@@ -345,12 +446,13 @@
     <p class="flex items-center">
         <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/phone.svg" alt="Phone" class="mr-2 w-5 h-5" />
         Phone:
-        <a href="tel:+919557199861" class="text-blue-400 hover:underline">+91 95571 99861</a>
+        <a href="tel:+917017135933" class="text-blue-400 hover:underline">
++91 70171 35933</a>
     </p>
     <p class="flex items-center">
        💬
         WhatsApp:
-        <a href="https://wa.me/917017135933" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">+91 70171 35933</a>
+        <a href="https://wa.me/919557199861" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">+91 9557199861</a>
     </p>
 </div>
 
